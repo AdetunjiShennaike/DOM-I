@@ -101,12 +101,25 @@ footerText.textContent = siteContent['footer']['copyright'];
 
 
 //new elements
+const newNavAnchor = document.createElement('a');
+const newNavAnchor2 = document.createElement('a');
 
+newNavAnchor.textContent = 'Greetings!';
+newNavAnchor2.textContent = 'Become One!!!!';
 
+const parent = document.querySelector('nav');
+parent.appendChild(newNavAnchor2);
+parent.prepend(newNavAnchor);
 
+const pText = document.querySelectorAll('p');
+console.log(pText)
+
+headerBtn.addEventListener('click', function(event){
+  pText.forEach( function(currentValue) {currentValue.style.color = 'orange';
+  });
+});
 
 //style change
-
 navBar.forEach( function(currentValue) {
   currentValue.style.color = 'green';
 });
