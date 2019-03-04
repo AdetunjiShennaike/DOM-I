@@ -85,8 +85,6 @@ mainSectionBot[1].textContent = siteContent['main-content']['product-content'];
 mainSectionBot[2].textContent = siteContent['main-content']['vision-content'];
 
 
-
-
 //contact section
 const contactHeader = document.querySelector('section.contact h4');
 contactHeader.textContent = siteContent['contact']['contact-h4'];
@@ -100,3 +98,16 @@ contactInfo[2].textContent = siteContent['contact']['email'];
 //footer section
 const footerText = document.querySelector('footer p');
 footerText.textContent = siteContent['footer']['copyright'];
+
+
+//new elements
+
+
+
+
+//style change
+
+navBar.forEach( function(currentValue) {
+  currentValue.style.color = 'green';
+});
+
